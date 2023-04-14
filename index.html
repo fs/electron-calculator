@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+
+    <div id="calculator">
+      <h1>Calculator</h1>
+      <p id="last_operation_history"></p>
+      <p id="box" class="box">0</p>
+      <table id="table">
+          <tr>
+              <td><button id="calculate_percentage">%</button></td>
+              <td><button id="clear_entry">CE</button></td>
+              <td><button id="button_clear">C</button></td>
+              <td><button id="backspace_btn"><</button></td>
+          </tr>
+          <tr>
+              <td><button id="division_one">¹∕ₓ</button></td>
+              <td><button id="power_of">𝑥²</button></td>
+              <td><button id="square_root">√𝑥</button></td>
+              <td><button id="plusOp" value="+" class="operator">+</button></td>
+          </tr>
+          <tr>
+              <td><button id="button_7">7</button></td>
+              <td><button id="button_8">8</button></td>
+              <td><button id="button_9">9</button></td>
+              <td><button id="subOp" value="-" class="operator">-</button></td>
+          </tr>
+          <tr>
+              <td><button id="button_4">4</button></td>
+              <td><button id="button_5">5</button></td>
+              <td><button id="button_6">6</button></td>
+              <td><button id="multiOp" value="*" class="operator">×</button></td>
+          </tr>
+          <tr>
+              <td><button id="button_1">1</button></td>
+              <td><button id="button_2">2</button></td>
+              <td><button id="button_3">3</button></td>
+              <td><button id="divOp" value="/" class="operator">÷</button></td>
+          </tr>
+          <tr>
+              <td><button id="plus_minus">±</button></td>
+              <td><button id="button_0">0</button></td>
+              <td><button id="dot" value=".">.</button></td>
+              <td colspan="4"><button value="=" class="operator" id="equal_sign">=</button></td>
+          </tr>
+      </table>
+  </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
